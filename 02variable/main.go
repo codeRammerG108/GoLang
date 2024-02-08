@@ -24,7 +24,7 @@ func main() {
 
 	var unIntializedInteger int64
 	fmt.Println("Variable ::", unIntializedInteger)
-	fmt.Printf("Variable username is off type :: %T\n", unIntializedInteger)
+	fmt.Printf("Variable unIntializedInteger is off type :: %T\n", unIntializedInteger)
 
 	//implicit Way
 	var website = "codeRammer07.com"
