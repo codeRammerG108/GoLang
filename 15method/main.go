@@ -9,7 +9,7 @@ func main() {
 	Abhi.NewMail()
 	fmt.Printf("Abhi: %+v", Abhi)
 	fmt.Printf("Abhishek name is %v\n", Abhi.Name)
-	Abhi.GetStatus()
+	fmt.Println(Abhi.GetStatus())
 
 }
 
@@ -20,8 +20,8 @@ type User struct {
 	Age    int
 }
 
-func (u User) GetStatus() {
-	fmt.Println("Is User Active: ", u.Status)
+func (u User) GetStatus() bool {
+	return u.Status
 }
 
 func (u User) NewMail() {
